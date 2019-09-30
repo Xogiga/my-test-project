@@ -7,3 +7,12 @@ script:
    - npm update
    - npm test
    - node_modules/.bin/jshint src
+   - node_modules/.bin/jsdoc src
+
+deploy:
+   - provider: pages
+   - skip-cleanup: true
+   - github-token: $GITHUB_TOKEN
+   - keep-history: true
+   - local-dir: /out
+   - on: branch
