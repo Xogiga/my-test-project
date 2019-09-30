@@ -13,5 +13,5 @@ deploy:
    - skip-cleanup: true
    - github-token: $github_token
    - keep-history: true
-   - local-dir: /out
+   - local-dir: ./out/index.html
    - on: branch
