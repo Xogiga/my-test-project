@@ -1,8 +1,9 @@
 language: node_js
 node_js: 
-	- "node"
+    - "node"
+
 script:
-	- echo "toto"
-	- npm update
-	- npm test
-	- node_modules/.bin/jshint src
+   - echo "toto"
+   - npm update
+   - npm test
+   - node_modules/.bin/jshint src
